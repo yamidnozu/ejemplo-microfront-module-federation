@@ -29,11 +29,11 @@ module.exports = {
         library: { type: "module" },
 
         // For remotes (please adjust)
-        // name: "mf",
-        // filename: "remoteEntry.js",
-        // exposes: {
-        //     './Component': './projects/mf/src/app/app.component.ts',
-        // },        
+        name: "mf",
+        filename: "remoteEntry.js",
+        exposes: {
+            './ShowInfoModule': './projects/mf/src/app/showinfo/showinfo.module.ts',
+        },        
         
         // For hosts (please adjust)
         // remotes: {
@@ -43,9 +43,10 @@ module.exports = {
 
         shared: share({
           "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
-          "@angular/common": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
           "@angular/common/http": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
           "@angular/router": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+          "@angular/common": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
+          rxjs: { singleton: true, strictVersion: true, requiredVersion: 'auto', includeSecondaries: true },
 
           ...sharedMappings.getDescriptors()
         })
