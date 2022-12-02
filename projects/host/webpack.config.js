@@ -36,10 +36,10 @@ module.exports = {
         // },        
         
         // For hosts (please adjust)
-        // remotes: {
-        //     "mf": "http://localhost:4200/remoteEntry.js",
+        remotes: {
+            "mf": "http://localhost:4242/remoteEntry.js",
 
-        // },
+        },
 
         shared: share({
           "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
