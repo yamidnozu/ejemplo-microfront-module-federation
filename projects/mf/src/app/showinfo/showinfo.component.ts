@@ -12,4 +12,8 @@ export class ShowinfoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // Define un método que realiza la simulación del crédito
+  calculate(): void {
+    // Realiza el cálculo del pago total del crédito
+  }
 }

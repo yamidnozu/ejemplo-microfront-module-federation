@@ -9,7 +9,7 @@ const routes: Routes = [
     pathMatch: 'full'
   }, {
     path: 'mf',
-    loadChildren: () => import('mf/ShowInfoModule').then(m => m.ShowinfoModule)
+    loadChildren: () => import('mf/SimuladorModule').then(m => m.SimuladorModule)
   }];
 
 @NgModule({

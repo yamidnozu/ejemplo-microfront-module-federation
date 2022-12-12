@@ -1,1 +1,1 @@
-declare module 'mf/ShowInfoModule';
+declare module 'mf/SimuladorModule';
