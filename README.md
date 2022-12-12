@@ -25,3 +25,27 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Comandos usados
+ng new workspace --create-application=false
+cd workspace
+
+ng g application host --style=scss --routing=true
+ng g application mfsimulador --style=scss --routing=true
+
+---- host ----
+ng g c home --project=host
+ng s home -o
+
+---- mf ----
+ng g m simulador --project=mfsimulador --routing
+ng g c simulador --project=mfsimulador 
+ng g c default --project=mfsimulador
+ng s mfsimulador -o
+
+
+----- configuracion webpack module federation -----
+  
+ng add @angular-architects/module-federation --project host --port 5000
+ng add @angular-architects/module-federation --project mf --port 4242
